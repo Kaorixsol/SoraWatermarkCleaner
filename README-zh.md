@@ -162,3 +162,22 @@ Apache License
 
 - [IOPaint](https://github.com/Sanster/IOPaint) 提供的 LAMA 实现
 - [Ultralytics YOLO](https://github.com/ultralytics/ultralytics) 提供的目标检测
+
+
+
+uv --version
+powershell -c "irm https://astral.sh/uv/install.ps1 | iex"
+$env:Path = "C:\Users\vepie\.local\bin;$env:Path"
+uv --version
+uv sync
+ffmpeg -version
+mkdir -p outputs
+uv run python example.py
+ls -la outputs/
+Get-ChildItem outputs/
+
+
+$env:Path = "C:\Users\vepie\.local\bin;$env:Path"
+uv run streamlit run app.py
+
+$env:Path = "C:\Users\vepie\.local\bin;$env:Path"; uv run streamlit run app.py --server.maxUploadSize=200
